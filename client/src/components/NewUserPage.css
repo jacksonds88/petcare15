@@ -1,0 +1,115 @@
+/* ────────────────
+   Layout Containers
+────────────────── */
+.page-wrapper {
+  padding: 2rem;
+}
+
+.form-spacer {
+  margin-top: 2rem;
+}
+
+.update-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ────────────────
+   Typography
+────────────────── */
+.title-text {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.or-divider {
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+}
+
+/* ────────────────
+   Form Structure
+────────────────── */
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-subgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-box {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  margin-bottom: 2rem;
+}
+
+/* ────────────────
+   Form Inputs
+────────────────── */
+input,
+textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ────────────────
+   Buttons
+────────────────── */
+button[type="submit"] {
+  align-self: center;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #1976d2;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1565c0;
+}
+
+.button:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+

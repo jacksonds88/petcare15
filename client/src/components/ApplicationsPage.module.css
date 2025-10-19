@@ -1,0 +1,189 @@
+.container {
+  background-color: lightblue;
+}
+
+/* ──────────────── Application Page Layout ──────────────── */
+.applicationWrapper {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  margin: 4rem 4rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.applicationSection {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.applicationSection h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.applicationCard {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.applicationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.applicationHeader h3 {
+  text-decoration: underline;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* ──────────────── Status Buttons ──────────────── */
+.statusActionRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.statusButton {
+  padding: 0.4rem 0.8rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.statusButton:hover {
+  background-color: #1565c0;
+}
+
+.approve {
+  background-color: #2e7d32;
+}
+
+.approve:hover {
+  background-color: #1b5e20;
+}
+
+.unreject {
+  background-color: #f9a825;
+}
+
+.unreject:hover {
+  background-color: #f57f17;
+}
+
+/* ──────────────── Collapsible Section Toggle ──────────────── */
+.sectionToggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.sectionToggle .button {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+}
+
+/* ──────────────── Field Display ──────────────── */
+.applicationField {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.applicationField input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.referencesBlock {
+  padding-left: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ──────────────── Section Colors ──────────────── */
+.pending {
+  border-left: 6px solid #1976d2;
+}
+
+.approved {
+  border-left: 6px solid #2e7d32;
+}
+
+.rejected {
+  border-left: 6px solid #d32f2f;
+}
+
+.bubbleRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sectionTitle {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 0;
+}
+
+.sectionToggleButton {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.sectionToggleButton:hover {
+  background-color: #1565c0;
+}
+
+.bulkToggleRow {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,248 @@
+/* ────────────────
+   Layout Containers
+────────────────── */
+.adminWrapper {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  margin: 4rem 4rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.formSection {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.profileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileDetailsBlock {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* ────────────────
+   Typography
+────────────────── */
+.title {
+  margin: 0.5rem;
+}
+
+.fieldLabel {
+  text-align: right;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.saveFeedback {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #1976d2;
+  animation: fadeInOut 3s ease forwards;
+}
+
+/* ────────────────
+   Form Layout
+────────────────── */
+.inputRow,
+.addRow,
+.checkboxRow {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.checkboxRow {
+  grid-template-columns: 160px auto;
+}
+
+/* ────────────────
+   Form Controls
+────────────────── */
+.inputField,
+.textareaField {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.textareaField {
+  resize: vertical;
+  line-height: 1.4;
+}
+
+.checkboxInput {
+  justify-self: start;
+  transform: scale(1.3);
+  cursor: pointer;
+  accent-color: #1976d2;
+  transition: transform 0.2s ease;
+}
+
+.checkboxInput:hover {
+  transform: scale(1.4);
+}
+
+/* ────────────────
+   Icons
+────────────────── */
+.deleteIcon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #d32f2f;
+  flex-shrink: 0;
+  margin-top: 6px;
+}
+
+/* ────────────────
+   Buttons
+────────────────── */
+.button {
+  padding: 0.6rem 1.2rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #1565c0;
+}
+
+.button:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.saveRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* ────────────────
+   Animations
+────────────────── */
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* ────────────────
+   Preview Gallery
+────────────────── */
+.previewRow {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.previewGallery {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 8px;
+}
+
+.previewItem {
+  flex: 0 0 auto;
+  position: relative;
+  max-width: 120px;
+}
+
+.previewImage {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.previewItemVideo {
+  max-height: 100px;
+}
+
+.previewDuo {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ────────────────
+   States
+────────────────── */
+.inputError {
+  border: 2px solid #d32f2f;
+  background-color: #ffe6e6;
+}
+
+.markedForDeletion {
+  opacity: 0.4;
+  filter: grayscale(100%);
+}
+
+.pendingGalleryRow,
+.pendingSpecialRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.pendingUpload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.pendingImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px dashed #ccc;
+  opacity: 0.7;
+}
+
+/* ────────────────
+   Collapsible Header
+────────────────── */
+.collapsibleTitle {
+  text-decoration: underline;
+  cursor: pointer;
+}

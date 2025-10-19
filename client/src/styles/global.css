@@ -1,0 +1,21 @@
+:root {
+  --peach-color: #FFDAB9;
+  --theme-color: #d6f0ff;
+  --text-color: #333333;
+  --background-color: #f8f8f8;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--text-color);
+  background-image: url('../assets/images/wallpaper.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

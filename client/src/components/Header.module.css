@@ -1,0 +1,93 @@
+/* ────────────────
+   Header Layout
+────────────────── */
+.siteHeader {
+  position: relative;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.siteTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.siteLogo {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ────────────────
+   Navigation
+────────────────── */
+.navWrapper {
+  width: 100%;
+  background-color: #d6f0ff;
+}
+
+.navLinks,
+.adminLinks {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+.navLink {
+  color: #6a1b9a;
+  text-decoration: underline;
+  font-weight: normal;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navLink:hover {
+  background-color: #e0f7fa;
+}
+
+.navLinkActive {
+  background-color: #b3e5fc;
+  border: 2px solid #0288d1;
+  font-weight: bold;
+  text-decoration: none;
+  animation: pulse 0.4s ease-in-out;
+}
+
+/* ────────────────
+   Admin Controls
+────────────────── */
+.logoutWrapper {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  z-index: 10;
+}
+
+.logoutButton {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.logoutButton:hover {
+  background-color: #005fa3;
+}
+
+/* ────────────────
+   Animations
+────────────────── */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

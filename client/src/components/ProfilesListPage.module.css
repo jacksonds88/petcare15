@@ -1,0 +1,131 @@
+/* Layout Containers */
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.profilesListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  box-sizing: border-box;
+}
+
+/* Shared Card Style */
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+}
+
+/* Announcements */
+.updateList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.updateList li::before {
+  content: "📣";
+  margin-right: 0.4em;
+  position: relative;
+}
+
+/* Profile Grid */
+.profileGrid {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.profileRow {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.profileLink {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  width: 100%;
+}
+
+.profileGridLayout {
+  display: grid;
+  grid-template-columns: 206px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.profileThumbnail {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--peach-color);
+}
+
+.profileDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.profileName {
+  margin: 0 auto;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.profileSubtext {
+  font-size: 1rem;
+  color: black;
+  margin: 5px;
+  padding: 2px;
+}
+
+/* Contact Section */
+.contactNote p {
+  max-width: 100%;
+}
+
+.contactDetails {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.phoneRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+/* Availability Bubbles */
+.available {
+  background-color: #cceeff;
+  color: #005577;
+}
+
+.unavailable {
+  background-color: #FFB6C1;
+  color: #005577;
+}

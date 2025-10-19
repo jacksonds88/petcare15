@@ -1,0 +1,21 @@
+{
+  "name": "petcare15",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0",
+    "multer": "^2.0.2",
+    "sanitize-filename": "^1.6.3"
+  }
+}
