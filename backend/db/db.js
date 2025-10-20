@@ -1,8 +1,14 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/petcare15', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+async function connectDB() {
+  try {
+    await mongoose.connect('mongodb://localhost:27017/khoneymoon');
+    console.log('✅ Connected to MongoDB');
+  } catch (err) {
+    console.error('❌ MongoDB connection error:', err);
+  }
+}
+
+connectDB();
 
 module.exports = mongoose;
